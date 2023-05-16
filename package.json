@@ -1,0 +1,33 @@
+{
+  "name": "@tarjs/tar-cli",
+  "version": "1.0.0",
+  "description": "creat a tar app",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "tar-cli": "./index.js"
+  },
+  "keywords": [
+    "tarjs",
+    "webcomponents"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "4.0.0",
+    "commander": "^9.4.0",
+    "git-clone": "^0.2.0",
+    "handlebars": "^4.7.7",
+    "inquirer": "^8.0.0",
+    "log-symbols": "^4.0.0",
+    "ora": "^4.0.4",
+    "shelljs": "^0.8.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tonylu110/vite-electron-cli.git"
+  }
+}

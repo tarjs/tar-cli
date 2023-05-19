@@ -1,3 +1,4 @@
+const shell = require('shelljs')
 module.exports = function (name) {
   return [
     {
@@ -5,6 +6,12 @@ module.exports = function (name) {
       name: 'name',
       message: 'your project name',
       default: name
+    },
+    {
+      type: 'list',
+      name: 'pm',
+      message: 'choose your package manager',
+      choices: ['npm', 'pnpm', 'yarn','cnpm'].filter(pm=>shell.which(pm))
     }
   ]
 }
